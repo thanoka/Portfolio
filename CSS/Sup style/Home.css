@@ -1,0 +1,18 @@
+
+.home-container {
+    scale: 1;
+}
+
+.deseclted-home{
+    scale: 0;
+}
+
+.text-box {
+    position: absolute;
+    width: 50%; 
+    bottom: 0; right: 0;
+}
+
+p {
+    line-height: 25px ;
+}

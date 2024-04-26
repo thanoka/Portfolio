@@ -1,0 +1,24 @@
+
+.education-container{
+    scale: 0;
+}
+.selected-education {
+    scale: 1;
+}
+
+.education-text{
+    position: absolute;
+    bottom: 0; right: 0;
+}
+
+.state{
+    text-align: end;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+}
+
+.school{
+    text-align: end;
+    margin: 25px;
+}
+

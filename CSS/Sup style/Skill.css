@@ -1,0 +1,185 @@
+:root {
+    --mode: black;
+    --frame: 25px;
+    --ofpmode: white;
+    --modeIn: 1;
+} 
+
+.Skill{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Skill-container {
+    scale: 0;
+}
+
+.selected-skill{
+    scale: 1;
+}
+
+.Skill-box {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 500px;
+    height: 500px;
+    bottom: 15px; right: 15px;
+}
+
+.Skill-child {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border:1px  var(--ofpmode) solid;
+    border-radius: 5px;
+}
+
+.child-img {
+    width: 55%;
+    height: 55%;
+}
+
+.child-img ion-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.child-img img{
+    width: 100%;
+    filter: invert(1);
+}
+
+.child-text {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    bottom: 0; left: 50%; translate: -50% 0;
+}
+.child-text span {
+    font-size: 10px;
+}
+
+.pointer {
+    width: 100px;
+    height: 100px;
+    background-color: var(--ofpmode);
+    place-self: center;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+.hovered-HTML {
+    transform: rotate(275deg);
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    
+}
+
+.hovered-CSS {
+    transform: rotate(320deg);
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    
+}
+.hovered-JS {
+    transform: rotate(365deg);
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    
+}
+
+.hovered-SQL {
+    transform: rotate(45deg);
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    
+}
+.hovered-Arduino{
+    transform: rotate(90deg);
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    
+}
+.hovered-Python{
+    transform: rotate(135deg);
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px
+}
+.hovered-Node{
+    transform: rotate(195deg);
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px
+}
+.hovered-React{
+    transform: rotate(230deg);
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px
+}
+
+/* Common hover effect for all Skill-child elements */
+.Skill-child:hover {
+    background-color: var(--ofpmode);
+}
+
+/* Text color for child-text when Skill-child is hovered */
+.Skill-child:hover .child-text {
+    color: var(--mode); 
+}
+.Skill-child:hover .child-text span{
+    color: var(--mode); 
+}
+
+/* Icon color for child-img ion-icon when Skill-child is hovered */
+.Skill-child:hover .child-img ion-icon {
+    color: var(--mode); 
+}
+
+/* Additional specific hover effects for certain elements */
+
+/* SQL specific */
+.SQL:hover .child-img img {
+    filter: grayscale(0%); /* Remove grayscale filter */
+}
+
+.skill-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 300px; height: 300px;
+    border-radius: 25px;
+    top: 50%;  left: 10%; translate: 0 -50%;
+    
+}
+
+.info-text {
+    display: flex;
+    max-height: 100%;
+    text-align: center;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+    transition: all 0.5s ease-in-out;
+}
